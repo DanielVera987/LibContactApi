@@ -17,7 +17,9 @@ class ContactFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word()
+            'name' => $this->faker->word(),
+            'last_name' => $this->faker->word(),
+            'company' => $this->faker->company(),
         ];
     }
 }
