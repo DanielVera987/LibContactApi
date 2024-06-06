@@ -12,9 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Contact::factory(15)->create();
-        \App\Models\ContactPhone::factory(10)->create();
-        \App\Models\ContactEmail::factory(14)->create();
-        \App\Models\ContactAddress::factory(15)->create();
+        \App\Models\Contact::factory(500)->create();
+        \App\Models\ContactPhone::factory(150)->create();
+        \App\Models\ContactEmail::factory(150)->create();
+        \App\Models\ContactAddress::factory(150)->create();
     }
 }

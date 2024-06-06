@@ -17,7 +17,7 @@ class ContactAddressFactory extends Factory
     public function definition(): array
     {
         return [
-            'contact_id' => $this->faker->numberBetween(1, 15),
+            'contact_id' => $this->faker->numberBetween(1, 500),
             'street' => $this->faker->streetName(),
             'between_streets' => $this->faker->streetName(),
             'zip' => $this->faker->postcode(),

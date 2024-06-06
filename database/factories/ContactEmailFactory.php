@@ -17,7 +17,7 @@ class ContactEmailFactory extends Factory
     public function definition(): array
     {
         return [
-            'contact_id' => $this->faker->numberBetween(1, 15),
+            'contact_id' => $this->faker->numberBetween(1, 500),
             'email' => $this->faker->email()
         ];
     }
