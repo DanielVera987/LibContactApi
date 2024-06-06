@@ -105,6 +105,6 @@ A continuación se detallan los endpoints disponibles en la API:
 |---------|-----------------------------|----------------------------------------------------------------------------------------------|
 | GET     | /api/contact               | Devuelve un array de contactos.                                                                 |
 | POST    | /api/contact               | Crea un contacto utilizando la información enviada dentro del `body` de la solicitud.           |
-| GET     | /api/contact/`{id}`   | Devuelve el objeto del contacto con el `id` especificado.                                        |
-| PUT     | /api/contact/`{id}`   | Actualiza el contacto con el `id` especificado utilizando los datos del `body` de la solicitud. |
-| DELETE  | /api/contact/`{id}`   | Elimina el contacto con el `id` especificado.                                                   |
+| GET     | /api/contact/`{contact}`   | Devuelve el objeto del contacto con el `id` especificado.                                        |
+| PUT     | /api/contact/`{contact}`   | Actualiza el contacto con el `id` especificado utilizando los datos del `body` de la solicitud. |
+| DELETE  | /api/contact/`{contact}`   | Elimina el contacto con el `id` especificado.                                                   |
