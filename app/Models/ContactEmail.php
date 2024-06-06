@@ -13,4 +13,8 @@ class ContactEmail extends Model
         'contact_id',
         'email'
     ];
+
+    public function contact() {
+        return $this->belongsTo(Contact::class);
+    }
 }

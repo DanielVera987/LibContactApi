@@ -19,4 +19,9 @@ class ContactAddress extends Model
         'num_ext',
         'num_int',
     ];
+
+    public function contact()
+    {
+        return $this->belongsTo(Contact::class);
+    }
 }

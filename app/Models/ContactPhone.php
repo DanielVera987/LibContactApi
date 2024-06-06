@@ -13,4 +13,9 @@ class ContactPhone extends Model
         'contact_id',
         'phone'
     ];
+
+    public function contact()
+    {
+        return $this->belongsTo(Contact::class);
+    }
 }

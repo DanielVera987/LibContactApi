@@ -10,6 +10,22 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name'
+        'name',
+        'last_name',
+        'company'
     ];
+
+    public function emails() {
+        return $this->hasMany(ContactEmail::class);
+    }
+
+    public function phones()
+    {
+        return $this->hasMany(ContactPhone::class);
+    }
+
+    public function addresses()
+    {
+        return $this->hasMany(ContactAddress::class);
+    }
 }
